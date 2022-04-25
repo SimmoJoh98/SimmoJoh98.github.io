@@ -43,13 +43,19 @@
 					let email = $('#email').val()
 					let msg = $('#message').val()
 					$(this).parents('form').submit(
-						await axios.post('https://simmo-mailer.herokuapp.com/api/mailme', {
+						axios.post('https://simmo-mailer.herokuapp.com/api/mailme', {
 							fname: fname,
 							email: email,
 							msg: msg
-						})
+						}),
+						Swal.fire({
+							title: 'Success!',
+							text: 'Message Sent Successfully!',
+							icon: 'success',
+							confirmButtonText: 'Cool'
+						  })
 					);
-
+					
 			});
 
 	// Sidebar.
