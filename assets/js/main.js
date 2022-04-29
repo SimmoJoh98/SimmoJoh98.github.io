@@ -28,6 +28,7 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+			axios.get('https://simmo-mailer.herokuapp.com/wakeup').then((res)=>console.log(`woke up the mail server...`))
 		});
 
 	// Forms.
