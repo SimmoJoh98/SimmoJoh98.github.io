@@ -56,7 +56,6 @@
 							confirmButtonText: 'Cool'
 						  })
 					);
-					
 			});
 
 	// Sidebar.
